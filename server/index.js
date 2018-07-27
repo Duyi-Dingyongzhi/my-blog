@@ -9,7 +9,7 @@ server.get('/api/getmsg', (req, res) => {
 })
 
 server.get('/', (req, res) => {
-    var file=require('fs').readFileSync('./dist/index.html', 'utf-8')
+    var file = require('fs').readFileSync('./dist/index.html', 'utf-8')
     res.end(file)
 })
 server.listen(9000, () => {

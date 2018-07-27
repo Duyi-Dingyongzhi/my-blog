@@ -16,7 +16,7 @@ export default new Vuex.Store({
     },
     actions: {
         getMsg({commit}) {
-            axios('http://localhost:9000/api/getmsg').then(res => commit('setMsg',res.data))
+            axios('/api/getmsg').then(res => commit('setMsg',res.data))
         }
     }
 })
